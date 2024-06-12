@@ -1,4 +1,3 @@
-Here is the article in GitHub Markdown format:
 
 # Automating Hamster Kombat: A Clicker Game on Telegram
 
@@ -31,12 +30,12 @@ The code used to automate Hamster Kombat is a JavaScript script that uses the `P
 
 ## How to Use the Code
 
-To use the code, you'll need to follow these steps:
+To use the code, you'll need to follow these steps inorder to run it browser:
 
-### Step 1: Install the Resource Override extension for Chrome browser.
+### Step 1: Install the Resource Override extension for the Chrome browser.
 
-### Step 2: Create a new rule to override the `telegram-web-app.js` file with the modified script.
-
+### Step 2: Create a new rule to override the `telegram-web-app.js` file with the modified script. add new rules in extentions
+from: From https://hamsterkombat.io/js/telegram-web-app.js to: https://cdn.jsdelivr.net/gh/prince1456/hamster@main/js/hamster-telegram.js
 ### Step 3: Launch Telegram Web and open the Hamster Kombat game.
 
 ### Step 4: Open the Chrome DevTools and navigate to the console.
