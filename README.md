@@ -27,6 +27,16 @@ The code used to automate Hamster Kombat is a JavaScript script that uses the `P
   }), 50);
 })();
 ```
+above code break down
+Here's a breakdown of the code:
+
+const evt1 = new PointerEvent('pointerdown', {clientX: 150, clientY: 300});: This line creates a new PointerEvent object that simulates a mouse click at coordinates (150, 300).
+const evt2 = new PointerEvent('pointerup', {clientX: 150, clientY: 300});: This line creates a new PointerEvent object that simulates a mouse click release at the same coordinates.
+setInterval((function fn() { ... }), 50);: This line sets an interval timer to execute the code inside the fn function every 50 milliseconds.
+const energy = parseInt(document.getElementsByClassName("user-tap-_energy")[0].getElementsByTagName("p")[0].textContent.split(" / ")[0]);: This line retrieves the current energy level of the player from the game's HTML element.
+if (energy > 25) { ... }: This line checks if the energy level is greater than 25, and if so, executes the code inside the if block.
+document.getElementsByClassName('user-tap-button')[0].dispatchEvent(evt1);: This line simulates a mouse click on the tap button.
+document.getElementsByClassName('user-tap-button')[0].dispatchEvent(evt2);: This line simulates a mouse click release on the tap button.
 
 ## How to Use the Code
 
